@@ -1,0 +1,9 @@
+services:
+  app:
+    image: node:22-alpine
+    working_dir: /app
+    command: ["npm", "run", "dev"]
+    volumes:
+      - ./:/app
+    ports:
+      - "3000:3000"
